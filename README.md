@@ -51,6 +51,8 @@ It's that easy!
 
 ## License
 
-Copyright &copy; 2014 Jason Lewis and Micah Gates
+
+Copyright &copy; 2014 Jason Lewis, Micah Gates
+
 
 Distributed under the MIT License; see LICENSE.txt
