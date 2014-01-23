@@ -1,9 +1,11 @@
 require "taint_aliases/version"
 
 module TaintAliases
+  TAINT_ALIASES = %w[grundle fleshy_fun_bridge]
   def self.included(receiver)
-    receiver.send(:alias_method, :grundle, :taint)
-    receiver.send(:alias_method, :fleshy_fun_bridge, :taint)
+    TAINT_ALIASES.each do |a|
+      receiver.send(:alias_method, a, :taint)
+    end
   end
 end
 
