@@ -1,6 +1,8 @@
 # TaintAliases
 
-TODO: Write a gem description
+[![Code Climate](https://codeclimate.com/github/ruby-jokes/taint_aliases.png)](https://codeclimate.com/github/ruby-jokes/taint_aliases)
+
+Aliases `Object#taint` with other common idioms for taint, such as `#grundle` and `#fleshy_fun_bridge`
 
 ## Installation
 
@@ -18,7 +20,23 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Just `require taint_aliases`, or require in your Gemfile; then you can do this:
+
+```ruby
+
+obj = Object.new
+obj.grundle
+
+obj.tainted?
+=> true
+
+str = "Test String"
+str.fleshy_fun_bridge
+
+str.tainted?
+=> true
+```
+It's that easy!
 
 ## Contributing
 
@@ -27,3 +45,9 @@ TODO: Write usage instructions here
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## License
+
+Copyright &copy; 2014 Jason Lewis
+
+Distributed under the MIT License; see LICENSE.txt
