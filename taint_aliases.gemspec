@@ -6,11 +6,11 @@ require 'taint_aliases/version'
 Gem::Specification.new do |spec|
   spec.name          = "taint_aliases"
   spec.version       = TaintAliases::VERSION
-  spec.authors       = ["Jason Lewis"]
-  spec.email         = ["jason@decomplecting.org"]
-  spec.description   = %q{Handy aliases for taint}
-  spec.summary       = %q{Handy aliases for taint}
-  spec.homepage      = ""
+  spec.authors       = ["Jason Lewis", "Micah Gates"]
+  spec.email         = ["jason@decomplecting.org", "gems@mgates.com"]
+  spec.description   = %q{Handy aliases for Object#taint}
+  spec.summary       = %q{Handy aliases for Object#taint}
+  spec.homepage      = "http://ruby-jokes.github.io/taint_aliases/"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
