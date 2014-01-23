@@ -9,16 +9,12 @@ module TaintAliasesSpec
       @obj = Object.new
     end
 
-    it "should be tainted with grundle" do
-      @obj.grundle
-      @obj.should be_tainted
+    TaintAliases::TAINT_ALIASES.each do |a|
+      it "should be tainted with #{a}" do
+        @obj.public_send a
+        @obj.should be_tainted
+      end
     end
-
-    it "should be tainted with fleshy_fun_bridge" do
-      @obj.fleshy_fun_bridge
-      @obj.should be_tainted
-    end
-
   end
 
   describe "subclasses should inherit the aliases" do
