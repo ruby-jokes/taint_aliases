@@ -18,18 +18,22 @@ module TaintAliasesSpec
   end
 
   describe "subclasses should inherit the aliases" do
+    TaintAliases::TAINT_ALIASES.each do |a|
+      it "should work on Strings" do
+        str = "I'm gettin' tainted"
+        str.public_send a
+        str.should be_tainted
+      end
 
-    it "should work on Strings" do
-      str = "I'm gettin' tainted"
-      str.grundle
-      str.should be_tainted
+      it "should work on Arrays" do
+        ary = []
+        ary.public_send a
+        ary.should be_tainted
+      end
     end
 
-    it "should work on Arrays" do
-      ary = []
-      ary.fleshy_fun_bridge
-      ary.should be_tainted
-    end
+
+
 
   end
 
