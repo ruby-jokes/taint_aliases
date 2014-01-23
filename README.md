@@ -41,6 +41,21 @@ str.tainted?
 ```
 It's that easy!
 
+`taint_aliases` currently supplies the following methods to taint your objects:
+
+* `grundle`
+* `fleshy_fun_bridge`
+* `perineum`
+* `gouch`
+* `gooch`
+* `grundel`
+
+## Contributors
+
+* [Jason Lewis](https://github.com/canweriotnow)
+* [Micah Gates](https://github.com/mgates)
+* [Milt Reder](https://github.com/milt)
+
 ## Contributing
 
 1. Fork it
@@ -53,6 +68,5 @@ It's that easy!
 
 
 Copyright &copy; 2014 Jason Lewis, Micah Gates
-
 
 Distributed under the MIT License; see LICENSE.txt
