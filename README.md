@@ -1,6 +1,9 @@
 # TaintAliases
 
+[![Build Status](https://travis-ci.org/ruby-jokes/taint_aliases.png?branch=master)](https://travis-ci.org/ruby-jokes/taint_aliases)
 [![Code Climate](https://codeclimate.com/github/ruby-jokes/taint_aliases.png)](https://codeclimate.com/github/ruby-jokes/taint_aliases)
+[![Coverage Status](https://coveralls.io/repos/ruby-jokes/taint_aliases/badge.png?branch=master)](https://coveralls.io/r/ruby-jokes/taint_aliases?branch=master)
+[![Dependency Status](https://gemnasium.com/ruby-jokes/taint_aliases.png)](https://gemnasium.com/ruby-jokes/taint_aliases)
 
 Aliases `Object#taint` with other common idioms for taint, such as `#grundle` and `#fleshy_fun_bridge`
 
