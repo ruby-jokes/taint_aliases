@@ -50,11 +50,29 @@ It's that easy!
 * `gooch`
 * `grundel`
 
+Thanks to [threeifbywhiskey](https://github.com/threeifbywhiskey), you can now use equivalent methods to untaint and check the taintedness of your objects, e.g.:
+
+```ruby
+
+obj = Object.new
+obj.grundle
+
+obj.grundled?
+=> true
+
+obj.unperineum
+
+obj.fleshy_fun_bridged?
+=> false
+
+```
+
 ## Contributors
 
 * [Jason Lewis](https://github.com/canweriotnow)
 * [Micah Gates](https://github.com/mgates)
 * [Milt Reder](https://github.com/milt)
+* [threeifbywhiskey](https://github.com/threeifbywhiskey)
 
 ## Contributing
 
