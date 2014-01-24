@@ -5,7 +5,11 @@ module TaintAliases
   TAINT_ALIASES = %w[grundle fleshy_fun_bridge perineum gouch gooch grundel]
   def self.included(receiver)
     TAINT_ALIASES.each do |a|
+      suffix = 'aeiou'[a[-1]] ? 'd': 'ed'
+      
       receiver.send(:alias_method, a, :taint)
+      receiver.send(:alias_method, "un" + a, :untaint)
+      receiver.send(:alias_method, a + suffix + "?", :tainted?)
     end
   end
 end
