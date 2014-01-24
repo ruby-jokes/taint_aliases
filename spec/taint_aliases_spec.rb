@@ -10,9 +10,23 @@ module TaintAliasesSpec
     end
 
     TaintAliases::TAINT_ALIASES.each do |a|
+      suffix = 'aeiou'[a[-1]] ? 'd' : 'ed'
+      query  = a + suffix + "?"
+        
       it "should be tainted with #{a}" do
         @obj.public_send a
         @obj.should be_tainted
+      end
+
+      it "should be untainted with un#{a}" do
+        @obj.public_send "un" + a
+        @obj.should_not be_tainted
+      end
+
+      it "should be queryable with #{query}" do
+        @obj.public_send(query).should be_false
+        @obj.public_send a
+        @obj.public_send(query).should be_true
       end
     end
   end
@@ -31,10 +45,6 @@ module TaintAliasesSpec
         ary.should be_tainted
       end
     end
-
-
-
-
   end
 
 end
